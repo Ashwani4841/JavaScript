@@ -30,3 +30,10 @@ console.log(message);
 }
 
 console.log(age);
+
+if (true) {
+    let city = "Varanasi";
+    console.log(city);
+}
+
+console.log(city);
