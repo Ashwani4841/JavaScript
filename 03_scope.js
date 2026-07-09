@@ -20,3 +20,13 @@ function greet() {
 greet();
 
 console.log(message);
+
+//Block Scope
+//A block is anything inside { }.
+
+{
+    let age = 24;
+    console.log(age);
+}
+
+console.log(age);
