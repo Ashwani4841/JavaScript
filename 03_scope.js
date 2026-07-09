@@ -37,3 +37,26 @@ if (true) {
 }
 
 console.log(city);
+
+
+//Example
+
+let country = "India";
+
+function outer() {
+
+    let state = "Uttar Pradesh";
+
+    function inner() {
+
+        let city = "Varanasi";
+
+        console.log(country);
+        console.log(state);
+        console.log(city);
+    }
+
+    inner();
+}
+
+outer();
