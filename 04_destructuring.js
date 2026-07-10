@@ -11,3 +11,10 @@ const{name,age,city} = student;
 console.log(name)
 console.log(age)
 console.log(city)
+
+//Array
+const fruits = ["banana","apple","orange"];
+const[first,second,third] = fruits
+console.log(first)
+console.log(second)
+console.log(third)
