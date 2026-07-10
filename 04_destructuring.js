@@ -27,3 +27,9 @@ const response = {
         email: "ashwani@gmail.com"
     }
 };
+const {
+    data: { name, email }
+} = response;
+
+console.log(name);
+console.log(email);
