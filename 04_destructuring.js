@@ -33,3 +33,14 @@ const {
 
 console.log(name);
 console.log(email);
+
+//function parameters
+function printUser({ name, age }) {
+    console.log(name);
+    console.log(age);
+}
+
+printUser({
+    name: "Ashwani",
+    age: 24
+});
