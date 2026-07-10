@@ -18,3 +18,12 @@ const[first,second,third] = fruits
 console.log(first)
 console.log(second)
 console.log(third)
+
+//nested
+const response = {
+    success: true,
+    data: {
+        name: "Ashwani",
+        email: "ashwani@gmail.com"
+    }
+};
