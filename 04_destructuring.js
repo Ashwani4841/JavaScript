@@ -44,3 +44,10 @@ printUser({
     name: "Ashwani",
     age: 24
 });
+
+/*
+Array destructuring uses [] and extracts values by position.
+Object destructuring uses {} and extracts values by property name.
+You can skip values, use default values, rename variables, and combine with the rest operator.
+Destructuring is used extensively in React, especially with props, hooks, and API data.
+*/
