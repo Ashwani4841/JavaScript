@@ -50,3 +50,32 @@ const firstUser2={
 }
 let result = Object.assign({},firstUser,firstUser2)
 console.log(result)
+
+
+/**************Object.freeze()*************
+What does it do?
+Makes an object completely read-only.*/
+const obj1={
+    name:"Janvi"
+}
+Object.freeze(obj1)
+obj1.name = "Ashwani"
+obj1.age = 24
+console.log(obj1)
+
+
+/************Object.seal()***********
+What does it do?
+A sealed object:
+✅ Can update existing properties.
+❌ Cannot add new properties.
+❌ Cannot delete properties.*/
+const data={
+    name:"Rahul"
+}
+Object.seal(data)
+data.name = "Rahul Gandhi";
+data.age = 25
+delete data.name;
+console.log(data)
+
