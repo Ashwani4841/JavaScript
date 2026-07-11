@@ -27,3 +27,26 @@ const user3={
     city:"london"
 }
 console.log(Object.entries(user3))
+
+/************hasOwnProperty()************
+What does it do?
+Checks if a property exists directly on the object.*/
+const user4={
+    name:"Arpit",
+    age:15,
+    city:"Mumbai"
+}
+console.log(user4.hasOwnProperty("name"))
+console.log(user4.hasOwnProperty("city"))
+
+/***********Object.assign()************
+What does it do?
+Copies properties from one or more objects into another object.*/
+const firstUser={
+    name:"Saurabh"
+}
+const firstUser2={
+    age:24
+}
+let result = Object.assign({},firstUser,firstUser2)
+console.log(result)
