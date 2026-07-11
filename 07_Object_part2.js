@@ -7,10 +7,10 @@ const user={
 }
 console.log(Object.keys(user))
 
+
 /***********Object.values()*********
 What does it do?
 Returns an array of all values.*/
-
 const user2={
     name:"Chandan",
     age:25,
@@ -78,4 +78,13 @@ data.name = "Rahul Gandhi";
 data.age = 25
 delete data.name;
 console.log(data)
+
+
+/************Object.hasOwn()**************
+ A newer alternative to hasOwnProperty().*/
+const student = {
+    name: "Ashwani"
+};
+console.log(Object.hasOwn(student, "name"));
+console.log(Object.hasOwn(student, "city"));
 
