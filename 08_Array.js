@@ -33,13 +33,21 @@ let finalResult = studentMarks.map((sum)=>sum+10)
 const classStudent = [20,40,53,72,74,19]
 let allClassStudent = classStudent.filter((findStudent)=>findStudent>50)
 let allClassStudent1 = classStudent.filter((findStudent)=>findStudent<30)
-console.log(allClassStudent) 
-console.log(allClassStudent1) 
+// console.log(allClassStudent) 
+// console.log(allClassStudent1) 
 
 // **************Reduce***********
 const addToCart  = [10,40,45,5]
 const priceToPay = addToCart.reduce((acc,carval)=>{ return acc+carval},0);
-console.log(priceToPay)
+// console.log(priceToPay)
+
+const addToCart1 = [100,200,300]
+const payWithGST = addToCart1.reduce((acc,value)=>{
+    return acc+value;
+},0)
+const finalGST = payWithGST*0.18
+console.log(finalGST)
+console.log(payWithGST)
 
 // map() → Changes every element and returns a new array of the same length.
 // filter() → Keeps only matching elements and returns a new array that may be shorter.
