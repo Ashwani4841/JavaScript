@@ -40,6 +40,7 @@ console.log(allClassStudent1)
 const addToCart  = [10,40,45,5]
 const priceToPay = addToCart.reduce((acc,carval)=>{ return acc+carval},0);
 console.log(priceToPay)
+
 // map() → Changes every element and returns a new array of the same length.
 // filter() → Keeps only matching elements and returns a new array that may be shorter.
 // find() → Returns only the first matching element (or undefined if no match is found).
