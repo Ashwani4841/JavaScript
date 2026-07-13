@@ -61,3 +61,10 @@ if (!isStudent) {
 } else {
     console.log("Student");
 }
+
+// for of loop
+const fruits = ["Apple", "Mango", "Banana"];
+
+for (const fruit of fruits) {
+    console.log(fruit);
+}
