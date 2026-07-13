@@ -68,3 +68,14 @@ const fruits = ["Apple", "Mango", "Banana"];
 for (const fruit of fruits) {
     console.log(fruit);
 }
+
+// for in loops
+const user = {
+    name: "Ashwani",
+    age: 24,
+    city: "Varanasi"
+};
+
+for (const key in user) {
+    console.log(key, user[key]);
+}
