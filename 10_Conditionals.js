@@ -53,3 +53,11 @@ if (!isStudent) {
 let isOnline = false;
 
 console.log(!isOnline);
+
+let isStudent = true;
+
+if (!isStudent) {
+    console.log("Not a student");
+} else {
+    console.log("Student");
+}
