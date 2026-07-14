@@ -1,4 +1,4 @@
-let promice = new Promise((resolve, reject)=>{
+let promise = new Promise((resolve, reject)=>{
     let isloggedIn = false
     if(isloggedIn){
         resolve("Welcome back")
@@ -8,8 +8,10 @@ let promice = new Promise((resolve, reject)=>{
     
 })
 
-promice.then((msg)=>{
+promise.then((msg)=>{
     console.log("logging succesfull")
 }).catch((err)=>{
     console.log("Something went wrong..")
+}).finally(()=>{
+    console.log("All state is settled")
 })
