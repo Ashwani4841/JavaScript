@@ -55,3 +55,23 @@ downloadFile()
 .then((data) => {
     console.log(data);
 });
+
+// example 3
+function orderFood() {
+
+    return new Promise((resolve) => {
+
+        console.log("Order Received");
+
+        setTimeout(() => {
+            resolve("Food Delivered 🍔");
+        }, 4000);
+
+    });
+
+}
+
+orderFood()
+.then((message) => {
+    console.log(message);
+});
