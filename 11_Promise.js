@@ -15,3 +15,23 @@ promise.then((msg)=>{
 }).finally(()=>{
     console.log("All state is settled")
 })
+
+// settimeout
+function makePayment() {
+
+    return new Promise((resolve) => {
+
+        console.log("Processing Payment...");
+
+        setTimeout(() => {
+            resolve("Payment Successful 💳");
+        }, 3000);
+
+    });
+
+}
+
+makePayment()
+.then((message) => {
+    console.log(message);
+});
