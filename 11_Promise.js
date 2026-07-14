@@ -35,3 +35,23 @@ makePayment()
 .then((message) => {
     console.log(message);
 });
+
+// example 2
+function downloadFile() {
+
+    return new Promise((resolve) => {
+
+        console.log("Downloading...");
+
+        setTimeout(() => {
+            resolve("Download Completed ✅");
+        }, 5000);
+
+    });
+
+}
+
+downloadFile()
+.then((data) => {
+    console.log(data);
+});
