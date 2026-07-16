@@ -76,3 +76,34 @@ setTimeout(() => {
 }, 0);
 
 console.log("E");           // Synchronous
+
+// *************************************************************
+
+/*What is async?
+
+The async keyword makes a function always return a Promise.
+
+async function
+        ↓
+Always returns a Promise
+
+.then()
+        ↓
+Runs as a Microtask*/
+
+// await means "wait until the work is finished, then continue."
+
+function orderPizza() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("🍕 Pizza Delivered");
+        }, 3000);
+    });
+}
+
+orderPizza()
+    .then((result) => {
+        console.log(result);
+    });
+
+console.log("Watching TV...");
