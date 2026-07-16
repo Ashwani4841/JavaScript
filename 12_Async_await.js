@@ -127,3 +127,12 @@ async function dinner() {
 }
 
 dinner();
+
+// *******
+login()
+.then((user)=>{
+    return getProfile(user);
+})
+.then((profile)=>{
+    console.log(profile);
+});
