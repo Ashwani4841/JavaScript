@@ -136,3 +136,17 @@ login()
 .then((profile)=>{
     console.log(profile);
 });
+
+// with async
+
+async function start() {
+
+    const user = await login();
+
+    const profile = await getProfile(user);
+
+    console.log(profile);
+
+}
+
+start();
