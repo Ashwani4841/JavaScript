@@ -34,17 +34,17 @@ Normal Lane (Callbacks)
 
 */
 
-console.log("1")
+// console.log("1")
 
 setTimeout(()=>{
-    console.log("2")
+    // console.log("2")
 },2000)
 
 Promise.resolve().then(()=>{
-    console.log("3")
+    // console.log("3")
 })
-console.log("4");
-// 1,3,4,2
+// console.log("4");
+// 1,4,3,2
 /*Rule to Remember ⭐
 
 Whenever both are waiting:
@@ -60,3 +60,19 @@ Runs Later
 A simple memory trick:
 
 Promise = Priority*/
+
+console.log("A");           // Synchronous
+
+Promise.resolve().then(() => {
+  console.log("B");         // Microtask
+});
+
+Promise.resolve().then(() => {
+  console.log("C");         // Microtask
+});
+
+setTimeout(() => {
+  console.log("D");         // Callback Queue (Macrotask)
+}, 0);
+
+console.log("E");           // Synchronous
