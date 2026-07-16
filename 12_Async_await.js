@@ -107,3 +107,23 @@ orderPizza()
     });
 
 console.log("Watching TV...");
+
+// ********
+function orderPizza() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("🍕 Pizza Delivered");
+        }, 3000);
+    });
+}
+
+async function dinner() {
+
+    const pizza = await orderPizza();
+
+    console.log(pizza);
+
+    console.log("Let's eat!");
+}
+
+dinner();
