@@ -178,3 +178,12 @@ const getData = async () => {
 }
 
 getData().then(data => console.log(data));
+
+const getData = async () => {
+    let y = await Promise.resolve("Hello World");
+    console.log(y);
+}
+
+console.log(1);
+getData();
+console.log(2);
