@@ -197,3 +197,25 @@ async function fetchData() {
     console.error('Error fetching data:', error);
   }
 }
+
+// A function that returns a Promise, simulating a 2-second delay (e.g., fetching from an API)
+function fetchGeeksData() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Data fetched successfully from GeeksforGeeks!");
+        }, 2000);
+    });
+}
+
+// An async function that awaits the Promise
+async function displayData() {
+    console.log("Fetching data...");
+
+    // Execution pauses here for 2 seconds until the promise resolves
+    const result = await fetchGeeksData(); 
+    
+    console.log(result);
+}
+
+displayData();
+console.log("This will print immediately before the data is fetched.");
