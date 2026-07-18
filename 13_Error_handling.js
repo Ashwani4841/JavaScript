@@ -12,3 +12,14 @@ async function FechData(){
 }
 
 FechData()
+
+// **************************
+console.log("Program Started");
+
+try {
+    console.log(userName);
+} catch (error) {
+    console.log("Something went wrong");
+}
+
+console.log("Program End");
