@@ -52,3 +52,14 @@ try {
 catch(error){
     console.log(error.message);
 }
+
+// ***********************************
+try {
+    console.log("Withdraw Money");
+}
+catch(error){
+    console.log(error);
+}
+finally{
+    console.log("Take your ATM card");
+}
