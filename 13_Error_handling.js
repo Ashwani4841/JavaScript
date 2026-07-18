@@ -36,3 +36,19 @@ try {
 catch(error) {
     console.log("Error:", error.message);
 }
+
+// **********************************
+let age = 15;
+
+try {
+
+    if(age < 18){
+        throw new Error("You are not eligible to vote.");
+    }
+
+    console.log("You can vote.");
+
+}
+catch(error){
+    console.log(error.message);
+}
