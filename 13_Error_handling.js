@@ -63,3 +63,23 @@ catch(error){
 finally{
     console.log("Take your ATM card");
 }
+
+// ************************************
+
+async function getData() {
+
+    try {
+
+        const result = await Promise.reject("Server Error");
+
+        console.log(result);
+
+    } catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
+getData();
