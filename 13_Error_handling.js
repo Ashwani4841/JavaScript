@@ -23,3 +23,16 @@ try {
 }
 
 console.log("Program End");
+
+// ************************************
+try {
+    let user = {
+        name: "Ashwani"
+    };
+
+    console.log(user.age.toUpperCase());
+
+}
+catch(error) {
+    console.log("Error:", error.message);
+}
