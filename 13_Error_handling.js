@@ -83,3 +83,13 @@ async function getData() {
 }
 
 getData();
+console.log("Start");
+
+try {
+    let user = JSON.parse("invalid json");
+    console.log(user);
+} catch (error) {
+    console.log("Something went wrong!");
+}
+
+console.log("End");
