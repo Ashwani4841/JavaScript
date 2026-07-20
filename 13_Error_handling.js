@@ -93,3 +93,14 @@ try {
 }
 
 console.log("End");
+try {
+    console.log("A");
+
+    let x = JSON.parse("wrong");
+
+    console.log("B");
+} catch (error) {
+    console.log("C");
+}
+
+console.log("D");
