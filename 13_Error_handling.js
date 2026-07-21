@@ -116,3 +116,18 @@ try {
   // Always executed, useful for cleanup actions
   console.log("Cleanup operations complete.");
 }
+
+function checkAge(age) {
+  if (age < 18) {
+    throw new Error("Access denied: You must be at least 18 years old.");
+  }
+  return "Access granted.";
+}
+
+try {
+  const status = checkAge(15); 
+  console.log(status);
+} catch (error) {
+  console.error("Validation Failed:", error.message);
+}
+
