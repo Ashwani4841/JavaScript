@@ -104,3 +104,15 @@ try {
 }
 
 console.log("D");
+
+try {
+  // Code that might cause an error
+  const user = null;
+  console.log(user.name); // Throws a TypeError
+} catch (error) {
+  // Executed only if an error occurs
+  console.error("An error occurred:", error.message);
+} finally {
+  // Always executed, useful for cleanup actions
+  console.log("Cleanup operations complete.");
+}
