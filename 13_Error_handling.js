@@ -130,4 +130,17 @@ try {
 } catch (error) {
   console.error("Validation Failed:", error.message);
 }
+async function fetchUserData() {
+  try {
+    // This will fail because the URL domain does not exist
+    const response = await fetch("https://invalid-domain.example.com/user");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    // Handles network drops or invalid API endpoints
+    console.error("Network or API Error:", error.message);
+  }
+}
+
+fetchUserData();
 
