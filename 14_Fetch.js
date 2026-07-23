@@ -20,3 +20,4 @@ getMessages(5);
 // example 3
 
 async function newData(){}
+async function userMessage(){}
