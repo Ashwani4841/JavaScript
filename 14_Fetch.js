@@ -5,3 +5,14 @@ async function todo() {
 }
 
 todo()
+
+// like chat application 
+
+async function getMessages(userId) {
+  const response = await fetch(`/api/messages/${userId}`);
+  const messages = await response.json();
+
+  console.log(messages);
+}
+
+getMessages(5);
