@@ -16,3 +16,7 @@ async function getMessages(userId) {
 }
 
 getMessages(5);
+
+// example 3
+
+async function newData(){}
