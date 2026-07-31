@@ -47,3 +47,18 @@ async function fetchData() {
 
 // Call the function
 fetchData();
+
+
+fetch('https://typicode.com')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json(); // Parses JSON data
+  })
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
