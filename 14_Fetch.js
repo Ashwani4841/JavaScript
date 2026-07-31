@@ -62,3 +62,26 @@ fetch('https://typicode.com')
   .catch(error => {
     console.error('Error fetching data:', error);
   });
+
+
+  async function createPost() {
+  const url = 'https://jsonplaceholder.typicode.com/posts';
+  const payload = { title: 'Hello World', body: 'This is my post.', userId: 1 };
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST', // HTTP method
+      headers: {
+        'Content-Type': 'application/json' // Tells the server we are sending JSON
+      },
+      body: JSON.stringify(payload) // Converts JavaScript object to a JSON string
+    });
+
+    const result = await response.json();
+    console.log('Post created:', result);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+createPost();
