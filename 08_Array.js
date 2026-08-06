@@ -9,7 +9,7 @@ students.unshift("Arpit")//add value start of the array
 
 /*************slice()*************/
 let data = ["Munni","Ankit","Ashish","Shivam","Chandan"]
-let finalData = data.slice(2,4)//array.slice(start, end);
+let finalData = data.slice(1,4)//array.slice(start, end);
 // start → Starting index (included)
 // end → Ending index (not included)
 // console.log(data)
